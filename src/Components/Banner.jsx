@@ -1,14 +1,17 @@
 import React from 'react'
-import hero from "../assets/hero.png"
-import { BsPlayBtnFill } from 'react-icons/bs'
+import BannerPng from "../assets/banner1.png"
 import { BiPlayCircle } from 'react-icons/bi'
-const Hero = () => {
+
+
+
+function Banner(){
   return (
-    <div className='text-black dark:text-white py-12 sm:py-0 dark:bg-black duration-300 overflow-hidden '>
-      <div className='container min-h-[700px] flex relative'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative z-10'>
-            {/* text section */}
-            <div className='w-[80%] flex flex-col gap-5 order-2 md:order-1'>
+    <div className='container py-6 px-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 items-center '>
+        <div className='flex items-center justify-center'>
+            <img src={BannerPng} alt="" />
+        </div>
+        <div className='w-[80%] flex flex-col gap-5 order-2 md:order-1'>
                 <h1 className='text-5xl uppercase font-semibold leading-12'>
                     Get ready to see the <span className='gradients bg-clip-text text-transparent'>vr games with this platform</span> 
                 </h1>
@@ -20,16 +23,9 @@ const Hero = () => {
                     <button className='flex items-center gap-3'> <BiPlayCircle className='text-3xl'/> See Demo</button>
                 </div>
             </div>
-            {/* image section */}
-            <div className='order-1 md:order-2'>
-                <img src={hero} alt="" className='max-h-[600px]' />
-            </div>
-        </div>
-        {/* animate volv */}
-        <div className='w-[300px] h-[300px] gradients absolute rounded-full blur-3xl top-0 left-0 animation-wrapper'></div>
       </div>
     </div>
   )
 }
 
-export default Hero
+export default Banner

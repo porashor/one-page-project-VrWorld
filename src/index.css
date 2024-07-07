@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@layer components{
+    .gradients{
+        @apply bg-gradient-to-r from-primary to-secondary
+    }
+    .primary-btn{
+        @apply gradients duration-300 py-2 px-6 text-white rounded-full hover:scale-105
+    }
+}
+
+
+
+.animation-wrapper{
+    animation-name: move-div;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes move-div {
+    0%{
+        transform: translate(150%, 30%) rotate(0) scale(0.8);
+    }
+    50%{
+        transform: translate(60vw, 0vh) rotate(150deg) scale(1.2);
+    }
+    100%{
+        transform: translate(40vw, 40vw) rotate(0) scale(0.8);
+    }
+}
