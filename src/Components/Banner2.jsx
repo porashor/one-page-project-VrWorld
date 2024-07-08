@@ -1,17 +1,17 @@
 import React from 'react'
-import BannerPng from "../assets/banner1.png"
+import BannerPng from "../assets/banner2.png"
 import { BiPlayCircle } from 'react-icons/bi'
 
 
 
-function Banner(){
+function Banner2(){
   return (
-    <div className='container py-6 px-4 min-h-[720px] flex items-center relative'>
-      <div className='grid grid-cols-1 md:grid-cols-2 items-center '>
-        <div className='flex items-center justify-center'>
-            <img src={BannerPng} alt="" />
+    <div className='container py-6 px-4 min-h-[720px] flex items-center justify-center relative'>
+      <div className='grid grid-cols-1 md:grid-cols-2 items-center w-[90%] mx-auto '>
+        <div className='flex items-center justify-center md:order-2'>
+            <img src={BannerPng} alt="" className='z-50' />
         </div>
-        <div className='w-[80%] flex flex-col gap-5 order-2 md:order-1'>
+        <div className='w-[80%] flex flex-col gap-5 md:order-1'>
                 <h1 className='text-5xl uppercase font-semibold leading-12'>
                     Get ready to see the <span className='gradients bg-clip-text text-transparent'>vr games with this platform</span> 
                 </h1>
@@ -25,9 +25,9 @@ function Banner(){
             </div>
       </div>
       {/* color bg volv */}
-      <div className='w-[300px] h-[300px] gradients absolute rounded-full blur-3xl  right-[200px]  z-0 opacity-50'></div>
+      <div className='w-[300px] h-[300px] gradients absolute rounded-full blur-3xl  left-[100px]  z-0 opacity-50'></div>
     </div>
   )
 }
 
-export default Banner
+export default Banner2

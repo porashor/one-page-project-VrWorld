@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
       {/* absolute menu for nav for mobile device */}
       {
-        show ? <div className='absolute -bottom-40 top-[100px] right-0 left-0 h-[500px] bg-white/80 dark:bg-black/80 backdrop-blur-md flex items-center justify-center'>
+        show ? <div className='absolute -bottom-40 top-[100px] right-0 left-0 h-[500px] bg-white/80 dark:bg-black/80 backdrop-blur-md flex items-center justify-center z-100'>
             <ul className='text-white'>
                         {NavLinks.map((item, index)=>(
                             <li key={index} className='py-4'>
