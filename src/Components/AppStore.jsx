@@ -3,7 +3,7 @@ import app from "../assets/website/app_store.png"
 import soft from "../assets/website/play_store.png"
 const AppStore = () => {
   return (
-    <div className='container py-14'>
+    <div data-aos="zoom-in" data-aos-delay="400" className='container py-14'>
       <div className='text-center w-[400px] mx-auto space-y-3'>
         <h1 className='text-3xl font-semibold capitalize text-center '>Get start with our app</h1>
         <p className='text-sm text-slate-500'>

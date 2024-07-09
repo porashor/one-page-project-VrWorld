@@ -11,7 +11,7 @@ const Foother = () => {
     <div className='bg-dark py-14 text-white'>
       <div className='container'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-10'>
-            <div className='space-y-3'>
+            <div data-aos="zoom-in" data-aos-delay="0" className='space-y-3'>
                 <h1 className='text-2xl font-semibold '>Metaverse</h1>
                 <p className='text-sm text-slate-400'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam voluptatem repellendus perferendis unde voluptas sit architecto maiores accusantium totam fuga.</p>
                 <div className='flex items-center gap-3'>
@@ -28,7 +28,7 @@ const Foother = () => {
                     <LiaLinkedin/>
                 </div>
             </div>
-            <div className='space-y-3'>
+            <div data-aos="zoom-in" data-aos-delay="300" className='space-y-3'>
                 <h1 className='text-2xl font-semibold'>Importent Links</h1>
                 <div className='flex flex-col gap-4'>
                     {
@@ -42,7 +42,7 @@ const Foother = () => {
                     }
                 </div>
             </div>
-            <div className='space-y-3'>
+            <div data-aos="zoom-in" data-aos-delay="600" className='space-y-3'>
                 <h1 className='text-2xl font-semibold'>Live Links</h1>
                 <div className='flex flex-col gap-4'>
                     {
@@ -56,7 +56,7 @@ const Foother = () => {
                     }
                 </div>
             </div>
-            <div className='space-y-3'>
+            <div data-aos="zoom-in" data-aos-delay="900" className='space-y-3'>
                 <h1 className='text-2xl font-semibold'> Links</h1>
                 <div className='flex flex-col gap-4'>
                     {

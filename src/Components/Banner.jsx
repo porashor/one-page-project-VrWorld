@@ -8,10 +8,10 @@ function Banner(){
   return (
     <div className='container py-6 px-4 min-h-[720px] flex items-center relative'>
       <div className='grid grid-cols-1 md:grid-cols-2 items-center '>
-        <div className='flex items-center justify-center'>
+        <div data-aos="fade-right" data-aos-delay="400" className='flex items-center justify-center'>
             <img src={BannerPng} alt="" />
         </div>
-        <div className='w-[80%] flex flex-col gap-5 order-2 md:order-1'>
+        <div data-aos="fade-left" data-aos-delay="800" className='w-[80%] flex flex-col gap-5 order-2 md:order-1'>
                 <h1 className='text-5xl uppercase font-semibold leading-12'>
                     Get ready to see the <span className='gradients bg-clip-text text-transparent'>vr games with this platform</span> 
                 </h1>
