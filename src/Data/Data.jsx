@@ -6,19 +6,19 @@ import { SlNote } from "react-icons/sl"
 export const NavLinks = [
     {
         name: "Home",
-        links: "home"
+        links: "#"
     },
     {
         name: "Products",
-        links: "products"
+        links: "#"
     },
     {
         name: "Pricing",
-        links: "pricing"
+        links: "#"
     },
     {
         name: "Contact",
-        links: "contact"
+        links: "#"
     },
 ]
 
